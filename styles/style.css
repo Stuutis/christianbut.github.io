@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  /* 1rem = 10px */
+}
+
+body {
+  background-color: #202020;
+  text-align: center;
+  font-family: 'Abel', sans-serif;
+}
+
+main {
+  color: whitesmoke;
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+  padding-top: 20px;
+}
+
+.profile_container {
+  padding: 0px 20px;
+}
+
+.profile_picture {
+  max-height: 300px;
+  border-radius: 50px;
+
+  align-content: center;
+}
+
+
+
+#techlonogies {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#techlonogies h1 {
+  font-size: 2rem;
+  padding: 2.5rem 0px 2rem 0px;
+
+}
+
+#techlonogies .techlonogies_learning h1 {
+  padding-bottom: 46px;
+}
+
+#techlonogies img {
+  max-width: 40px;
+  max-height: 40px;
+  margin-bottom: 1rem;
+
+}
+
+.techlonogies_learning {
+  align-items: center;
+  gap: 5px;
+  max-width: 30rem;
+  width: 50%;
+}
+
+.techlonogies_worked {
+  max-width: 30rem;
+  justify-items: center;
+  align-items: center;
+  gap: 5px;
+  width: 50%;
+}
+
+.name {
+  margin: 20px 0px;
+  font-size: 5rem;
+}
+
+#bio {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+#bio p {
+  line-height: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+#contact {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+#contact a {
+  font-size: 2rem;
+  text-align: left;
+  color: whitesmoke;
+  text-decoration: none;
+  padding-bottom: 10px;
+  font-weight: 600;
+
+}
+
+.iconBio {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+}
+
+#contact a img {
+  width: 40px;
+  height: 40px;
+
+}
+
+#projects h2 {
+  text-transform: uppercase;
+  padding-bottom: 4rem;
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+#all_projects {
+
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+#all_projects a {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: 600;
+}
+
+#all_projects p {
+  font-size: 1.3rem;
+
+}
+
+.projects_box {
+  max-width: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  color: #e5e5e5;
+  border: #e5e5e5 1px solid;
+  border-radius: 4px;
+  width: 300px;
+  padding: 10px 0px;
+  margin-bottom: 20px;
+}
+
+.description {
+  min-height: 100px;
+  margin: 10px 10px;
+  text-align: center;
+}
+
+#language {
+  border: #e5e5e5 1px solid;
+  border-radius: 4px;
+  padding: 0 5px;
+  margin-bottom: 0;
+  width: fit-content;
+  margin: auto;
+  font-size: 1.6rem;
+}
+
+/* --- RESPONSIVO --- */
+@media (min-width: 1024px) {
+
+  main {
+    padding: 0px 40px;
+  }
+
+  body {
+    overflow: auto;
+  }
+
+  section {
+    height: 100vh;
+  }
+
+  .profile_bio {
+    margin-bottom: 50px;
+  }
+
+  #techlonogies {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .techlonogies_learning {
+    max-width: 40rem;
+  }
+
+  .techlonogies_worked {
+    max-width: 40rem;
+  }
+
+  #contact {
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  #all_projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+
+  .projects_box {
+    max-width: 300px;
+    max-height: 210px;
+    height: 210px;
+  }
+
+  #all_projects .projects_box p {
+    font-size: 1.6rem;
+  }
+}
